@@ -1,0 +1,206 @@
+body {
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+}
+
+
+header {
+	width: 100%;
+	height: 10%;
+	background-color: #5b7989;
+	display: flex;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.c1Header {
+	width: 60%;
+	margin: 0 auto;
+
+}
+
+.c1Header h1 {
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	margin-left: 2vw;
+	font-size: 1.8em;
+}
+
+.menu {
+	width: 40%;
+	padding: 1%;
+}
+
+.menu p {
+	/*padding: 2vh 5vh;*/
+	text-align: right;
+	/*height: 10vh;*/
+}
+
+.menu a {
+	background-color: #ffffff1a;
+	padding: 10px;
+	
+	color: white;
+	border-radius: 15px;
+	transition: background-color .2s;
+	font-size: 1.5em;
+}
+
+.menu a:active {
+	text-decoration: none;
+}
+
+.menu a:hover {
+	background-color: #f6f47566;
+}
+
+
+
+#contenido{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+article{
+	box-sizing: border-box;
+
+	height: 100%;
+
+	padding: 2%;
+	text-align: center;
+
+}
+
+#central 	{
+	background-color: #82c3a6;
+	width: 100%;
+}
+
+#central img {
+	width: 90%;
+	box-shadow: 2px 2px 4px #82c3a6; 
+}
+
+#secundaria {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	overflow: hidden;
+	background-color: #d5c75f; 
+	border: 1px solid;
+	width: calc(100% - 1px);
+}
+
+#secundaria img {
+	width: 90%;
+	margin-top: 30px;
+	box-shadow: 2px 2px 4px #82c3a6; 
+}
+
+#secundaria img:hover {
+	box-shadow: 2px 2px 4px #02010a; 
+	border: 2px solid;
+}
+
+#columna2, #columna3 {
+	width: 50%;
+	padding-bottom: 10%;
+}
+
+#columna2 img {
+	transform: rotateZ(10deg);
+}
+
+
+#columna3 img {
+	transform: translate(-5px,20px);
+}
+
+
+
+#footerContenido {
+	background-color: #C6d5c5;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 0px 0px 10px 10px;
+}
+
+#footerContenido p {
+	width: 25%;
+	text-align: center;
+}
+
+#footerContenido strong {
+	font-size: 1.4em;
+}
+
+#footerContenido img{
+	width: 15%;
+}
+
+#footerContenido a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px){
+
+
+	.c1Header {
+		text-align: left;
+		width: 60%;
+	}
+
+	header {
+		height: 10%;
+	}
+
+	
+}
+
+
+@media screen and (max-width: 899px){
+
+	#contenido {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#columna1 {
+		width: 100%;
+	}
+
+	#columna2 {
+		width: 100%;
+	}
+
+	#columna3 {
+		width: 100%;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	#footerContenido p {
+		width: 100%;
+		text-align: center;
+	}
+
+	.c1Header {
+		text-align: center;
+		width: 100%;
+	}
+
+}
